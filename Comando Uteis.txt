@@ -1,6 +1,12 @@
 - colocar o servidor no ar
 PHP artisan serve
 
+- comandos disponíveis
+PHP artisan list
+
+- Rotas cadastradas na aplicação
+ php artisan route:list
+
 
 CONTROLLERS
 =================================
@@ -43,4 +49,12 @@ GITHUB
 git commit -m "Aula 193"
 
 - enviar para o repositório online
- git push -u origin master2
+ git push -u origin main
+
+
+
+PHP
+=====================================
+
+Verificar onde estão o arquivos de configuração do PHP
+php --ini
