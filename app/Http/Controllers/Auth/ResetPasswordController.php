@@ -27,4 +27,14 @@ class ResetPasswordController extends Controller
      * @var string
      */
     protected $redirectTo = RouteServiceProvider::HOME;
+
+    // aula 219: metodo sobrescrito para aceitar 4 caracteres em vez de 8
+    protected function rules()
+    {
+        return [
+            'token' => 'required',
+            'email' => 'required|email',
+            'password' => 'required|confirmed|min:4',
+        ];
+    }
 }
